@@ -5,7 +5,7 @@ import Pitb from "../assets/images/pitb.png";
 import Nic from "../assets/images/nic.png";
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row m-4 sm:mx-32 mt-3 ">
+    <section className="flex flex-col md:flex-row m-4 sm:mx-32 mt-3 ">
       <div className="flex-1 flex-col">
         <h1 className="text-4xl sm:text-5xl p-2 text-[#21282E] font-bold">
           Looking for dream internship?
@@ -72,7 +72,7 @@ const HeroSection = () => {
       <div className="flex-1">
         <img src={Hero} alt="Internee.pk" />
       </div>
-    </div>
+    </section>
   );
 };
 export default HeroSection;
