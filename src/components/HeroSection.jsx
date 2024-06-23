@@ -5,12 +5,12 @@ import Pitb from "../assets/images/pitb.png";
 import Nic from "../assets/images/nic.png";
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row m-4 sm:mx-32 mt-3">
+    <div className="flex flex-col md:flex-row m-4 sm:mx-32 mt-3 ">
       <div className="flex-1 flex-col">
-        <h1 className="text-5xl p-2 text-[#21282E] font-bold">
+        <h1 className="text-4xl sm:text-5xl p-2 text-[#21282E] font-bold">
           Looking for dream internship?
         </h1>
-        <div className="text-[#43a724] p-2 text-6xl font-semibold min-h-48 sm:min-h-36 w-[100%] md:max-w-[80%]">
+        <div className="text-[#43a724] p-2 text-5xl sm:text-6xl font-semibold min-h-48 sm:min-h-36 w-[100%] md:max-w-[80%]">
           <ReactTyped
             startWhenVisible
             strings={[
@@ -24,23 +24,24 @@ const HeroSection = () => {
           />
         </div>
         <p className="text-[#717275] text-[20px] m-1 w-[100%] md:max-w-[80%]">
-          Internee.pk kickstart student's tech careers with first internships,
-          providing industry exposure, practical skills, and networking
-          opportunities, paving the way for their success in the tech industry.
+          Internee.pk kickstart student&apos;s tech careers with first
+          internships, providing industry exposure, practical skills, and
+          networking opportunities, paving the way for their success in the tech
+          industry.
         </p>
         <div className="flex items-center justify-start">
           <img
-            className="h-12 sm:h-14 md:h-16 w-auto m-2"
+            className="h-11 sm:h-14 md:h-16 w-auto m-2"
             src={Incubation}
             alt="Incubation"
           />
           <img
-            className="h-12 sm:h-14 md:h-16 w-auto m-2"
+            className="h-11 sm:h-14 md:h-16 w-auto m-2"
             src={Pitb}
             alt="Pitb"
           />
           <img
-            className="h-12 sm:h-14 md:h-16 w-auto m-2"
+            className="h-11 sm:h-14 md:h-16 w-auto m-2"
             src={Nic}
             alt="Nic"
           />
