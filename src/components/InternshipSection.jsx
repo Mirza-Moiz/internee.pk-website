@@ -1,6 +1,8 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Icon from "../assets/images/icon.jpg";
+import InternshipCard from "./InternshipCard";
+import Card from "./Card";
 
 const InternshipSection = () => {
   const responsive = {
@@ -27,7 +29,7 @@ const InternshipSection = () => {
     },
   };
 
-  const cards = [
+  const internshipCards = [
     {
       title: "Frontend Internship",
       description:
@@ -95,80 +97,116 @@ const InternshipSection = () => {
       image: "./images/technical-writing.webp",
     },
   ];
-  return (
-    <section className="flex flex-col items-center m-4 sm:mx-32 mt-12 ">
-      <div className="flex items-center justify-center h-24 w-24 rounded-full shadow-md">
-        <img
-          className="h-11 sm:h-14 md:h-16 w-auto m-2"
-          src={Icon}
-          alt="Internee.pk icon"
-        />
-      </div>
-      <h1 className="text-center  text-3xl sm:text-4xl md:text-5xl p-2 text-[#21282E] font-bold">
-        Who is internee.pk?
-      </h1>
-      <p className="my-4 text-[#717275]  text-center text-[16px] sm:text-[18px]   md:text-[20px] m-1 w-[100%] md:max-w-[80%]">
-        The ultimate platform designed to turbocharge the IT sector in Pakistan!
-        We recognize the immense potential of talented individuals in the
-        country and aim to bridge the gap between them and the thriving IT
-        industry. Internee.pk offers a comprehensive range of virtual internship
-        opportunities exclusively in the IT field.
-      </p>
-      <span className="font-bold text-[#43a724] text-[16px] sm:text-[18px]   md:text-[20px] m-4 mb-10 w-[100%] md:max-w-[80%] text-center">
-        👇 Click Below and grab your internship now 👇
-      </span>
-      <div className=" flex flex-col  justify-center w-full bg-[#43a724] py-8 px-8 rounded-xl">
-        <Carousel
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={5000}
-          keyBoardControl={true}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-        >
-          <div className="flex flex-col items-center justify-center ">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 text-[#21282E] font-bold">
-              Get Internship In Your Favourite Domain 🙌. Almost 30+{" "}
-            </h1>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 text-[#21282E] font-bold">
-              Internships Are Open, Go & Grab Your Seats Now and secure your
-              future👨🏼‍💻
-            </h1>
-          </div>
-          {/* Items to map */}
-          {cards.map((card) => (
-            <Card
-              key={card.title}
-              title={card.title}
-              description={card.description}
-              image={card.image}
-            />
-          ))}
-        </Carousel>
 
-        <h1 className="mt-8 text-2xl sm:text-3xl md:text-4xl text-white mx-auto ">
-          Learn skills,<b> Market will be yours.</b>
+  const cards = [
+    {
+      title: "Backend Development",
+      image: "./images/BackendDevelopment.webp",
+    },
+    {
+      title: "App Development Internship",
+      image: "./images/mobile-app.webp",
+    },
+    {
+      title: "Graphic Design",
+      image: "./images/graphics.webp",
+    },
+    {
+      title: "Chatbot Development",
+      image: "./images/chatbot.webp",
+    },
+    {
+      title: "Data Analytics",
+      image: "./images/analysis.webp",
+    },
+    {
+      title: "Figma Internship",
+      image: "./images/figma.png",
+    },
+  ];
+  return (
+    <>
+      <section className="flex flex-col items-center m-4 sm:mx-32 mt-12 ">
+        <div className="flex items-center justify-center h-24 w-24 rounded-full shadow-md">
+          <img
+            className="h-11 sm:h-14 md:h-16 w-auto m-2"
+            src={Icon}
+            alt="Internee.pk icon"
+          />
+        </div>
+        <h1 className="text-center  text-3xl sm:text-4xl md:text-5xl p-2 text-[#21282E] font-bold">
+          Who is internee.pk?
         </h1>
-      </div>
-    </section>
-  );
-};
+        <p className="my-4 text-[#717275]  text-center text-[16px] sm:text-[18px]   md:text-[20px] m-1 w-[100%] md:max-w-[80%]">
+          The ultimate platform designed to turbocharge the IT sector in
+          Pakistan! We recognize the immense potential of talented individuals
+          in the country and aim to bridge the gap between them and the thriving
+          IT industry. Internee.pk offers a comprehensive range of virtual
+          internship opportunities exclusively in the IT field.
+        </p>
+        <span className="font-bold text-[#43a724] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] m-4 mb-10 w-[100%] md:max-w-[80%] text-center">
+          👇 Click Below and grab your internship now 👇
+        </span>
+        <div className=" flex flex-col  justify-center w-full bg-[#43a724] py-8 px-8 rounded-xl">
+          <Carousel
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={5000}
+            keyBoardControl={true}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+          >
+            <div className="flex flex-col items-center justify-center ">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 text-[#21282E] font-bold">
+                Get Internship In Your Favourite Domain 🙌. Almost 30+{" "}
+              </h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 text-[#21282E] font-bold">
+                Internships Are Open, Go & Grab Your Seats Now and secure your
+                future👨🏼‍💻
+              </h1>
+            </div>
+            {/* Items to map */}
+            {internshipCards.map((card) => (
+              <InternshipCard
+                key={card.title}
+                title={card.title}
+                description={card.description}
+                image={card.image}
+              />
+            ))}
+          </Carousel>
 
-const Card = ({ title, description, image }) => {
-  return (
-    <div className="flex flex-col items-center justify-between bg-white min-h-[522px] h-auto w-auto rounded-xl shadow-md m-2 sm:m-4">
-      <img src={image} alt={title} className="h-auto w-full rounded-t-md" />
+          <h1 className="mt-8 text-center text-1xl sm:text-2xl md:text-3xl lg:text-4xl text-white mx-auto ">
+            Learn skills,<b> Market will be yours.</b>
+          </h1>
+        </div>
+      </section>
+      <section className="flex flex-col items-center m-4 sm:mx-32 mt-12 ">
+        <h1 className="text-center  text-3xl sm:text-4xl md:text-5xl p-2 text-[#21282E] font-bold">
+          Internships every months
+        </h1>
+        <p className="my-4 text-[#717275]  text-center text-[16px] sm:text-[18px]   md:text-[20px] m-1 w-[100%] md:max-w-[80%]">
+          Introducing Internee.pk, the ultimate platform designed to turbocharge
+          the IT sector in Pakistan! We recognize the immense potential of
+          talented individuals in the country and aim to bridge the gap between
+          them and the thriving IT industry. Internee.pk offers a comprehensive
+          range of virtual internship opportunities exclusively in the IT field.
+        </p>
+        <button className="w-40 p-2  my-3 text-white hover:bg-[#58a940cd] rounded-[10px] bg-[#43a724] transition-all duration-300 ease-in-out ">
+          <a href="https://internee.pk/web-design.html" target="_blank">
+            Browse Internship
+          </a>
+        </button>
 
-      <h1 className="mx-2  text-xl font-bold text-[#21282E] p-2">{title}</h1>
-      <p className="mx-2 text-[#717275] text-wrap text-sm p-2">{description}</p>
-      <button className="w-32 py-2 my-3 text-white hover:bg-[#58a940cd] rounded-[10px] bg-[#43a724] transition-all duration-300 ease-in-out ">
-        <a href="https://job.internee.pk/" target="_blank">
-          Apply Now
-        </a>
-      </button>
-    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 w-full sm:w-[100%] m-auto mt-4">
+          {cards.map((card) => (
+            <Card key={card.title} title={card.title} image={card.image} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
