@@ -23,7 +23,7 @@ const BlogSection = () => {
     },
   ];
   return (
-    <section className="min-h-screen py-10 flex flex-col items-center justify-center bg-gray-100 text-gray-700">
+    <section className=" py-10 flex flex-col items-center justify-center bg-gray-100 text-gray-700">
       <div className="flex flex-col justify-center items-center">
         <p className="text-lg text-grey-500 font-semibold">Our Blog</p>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
