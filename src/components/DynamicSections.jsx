@@ -189,14 +189,14 @@ const DynamicSections = () => {
               index === 1 || index === 3 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="flex w-full md:w-1/2">
+            <div className="flex w-full items-center md:w-1/2">
               <img
                 src={section.image}
                 alt={section.title}
-                className="w-full h-auto object-cover"
+                className="w-full h-fit"
               />
             </div>
-            <div className="flex flex-col w-full py-2 md:w-1/2 pl-10">
+            <div className="flex flex-col w-full py-2 md:w-1/2 pl-1 md:pl-10">
               <h1 className="text-xl md:text-2xl font-bold">
                 {section.subTitle}
               </h1>
