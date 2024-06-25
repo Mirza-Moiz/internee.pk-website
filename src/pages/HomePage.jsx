@@ -3,6 +3,7 @@ import InternshipSection from "../components/InternshipSection";
 import BlogSection from "../components/BlogSection";
 import DynamicSections from "../components/DynamicSections";
 import FeaturesSection from "../components/FeaturesSection";
+import TestimonialSection from "../components/TestimonialSection";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <BlogSection />
       <DynamicSections />
       <FeaturesSection />
+      <TestimonialSection />
     </>
   );
 };
