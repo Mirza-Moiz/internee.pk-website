@@ -31,7 +31,7 @@ const ContactPage = () => {
   return (
     <>
       <section className="flex flex-col justify-center items-center">
-        <h1 className=" text-xl sm:text-3xl   text-[#21282E] font-bold">
+        <h1 className=" text-xl sm:text-3xl   text-[#21282E] font-bold  mt-10">
           Are you looking for hands on candidate for your company?
         </h1>
         <p className="text-center my-4 text-[#717275] text-[16px] sm:text-[18px] md:text-[20px] m-1 w-[90%] md:max-w-[70%]">
