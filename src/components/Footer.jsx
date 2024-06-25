@@ -69,10 +69,16 @@ const Footer = () => {
                 />
               </a>
             </div>
-            <p className="text-[#4A5056] text-[16px] m-1">Copyright ©2024</p>
             <p className="text-[#4A5056] text-[16px] m-1">
-              internee.pk Pvt Ltd.
+              <a href="tel:+923107121842">+92 310 7121842</a>
             </p>
+            <p className="text-[#4A5056] text-[16px] m-1">
+              <a href="mailto:moiznadeem1243@gmail.com">
+                moiznadeem1243@gmail.com
+              </a>
+            </p>
+            <p className="text-[#4A5056] text-[16px] m-1">Copyright ©2024</p>
+            <p className="text-[#4A5056] text-[16px] m-1">Mirza-Moiz</p>
             <p className="text-[#4A5056] text-[16px] m-1">
               All rights reserved.
             </p>
