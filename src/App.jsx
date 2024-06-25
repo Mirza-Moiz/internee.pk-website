@@ -11,13 +11,31 @@ import ContactPage from "./pages/ContactPage";
 import CompanyPage from "./pages/CompanyPage";
 import InternshipPage from "./pages/InternshipPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="/internship" element={<InternshipPage />} />
+        <Route index element={<HomePage screenWidth={screenWidth} />} />
+        <Route
+          path="/internship"
+          element={<InternshipPage screenWidth={screenWidth} />}
+        />
         <Route path="/company" element={<CompanyPage />} />
         <Route path="/contact" element={<ContactPage />} />
 

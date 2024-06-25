@@ -1,27 +1,4 @@
-const BlogSection = () => {
-  const blogs = [
-    {
-      title: "Complete all of the task but didn't get certification yet? 😓🤦‍♀️",
-      description:
-        "📧 Drop us a quick email at issues@internee.pk with the subject Didn&apos;t get certification yet. Our team will swiftly resolve the matter, ensuring you get your recognition promptly.",
-    },
-    {
-      title: "We've hit a major milestone: 20,000 followers on LinkedIn! 🎉",
-      description:
-        "Thank you for being a part of our incredible journey towards empowering students and professionals in the world of IT and services. Your support means the world to us! 🚀",
-    },
-    {
-      title:
-        "🚀Calling communities to Empower Students, Collaborate with Internee.pk!✌",
-      description:
-        "We'd love to discuss how a collaboration with Internee.pk can benefit your universites , socities, institutes and educational institutions and specially with students.",
-    },
-    {
-      title: "Ready to Showcase Your Expertise? Follow These Simple Steps! 🌟",
-      description:
-        "To complete the process, send us all the task details via email at careers@internee.pk. This ensures that we have all the necessary information to validate your certification.",
-    },
-  ];
+const BlogSection = ({ blogs }) => {
   return (
     <section className=" py-10 flex flex-col items-center justify-center bg-gray-100 text-gray-700">
       <div className="flex flex-col justify-center items-center">
