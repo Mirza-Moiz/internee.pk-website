@@ -15,7 +15,7 @@ import { IoMdDownload } from "react-icons/io";
 import { VscTasklist } from "react-icons/vsc";
 import { RiTaskLine } from "react-icons/ri";
 import { GoTasklist } from "react-icons/go";
-const DynamicSections = () => {
+const DynamicSections = ({ screenWidth }) => {
   const sections = [
     {
       subTitle: "Our own task portal",
@@ -184,12 +184,12 @@ const DynamicSections = () => {
 
   return (
     <section className=" flex flex-col justify-center items-center">
-      <div className="w-[90%]">
+      <div className="w-[90%] lg:w-[80%] xl:w-[85%]">
         {sections.map((section, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row my-24 ${
-              index === 1 || index === 3 ? "md:flex-row-reverse" : ""
+            className={`flex flex-col lg:flex-row my-24 ${
+              index === 1 || index === 3 ? "lg:flex-row-reverse" : ""
             }`}
           >
             <motion.div
@@ -201,7 +201,9 @@ const DynamicSections = () => {
             >
               <motion.div
                 variants={
-                  index === 1 || index === 3
+                  screenWidth < 1024
+                    ? bottomUp
+                    : index === 1 || index === 3
                     ? fadeIn("left", "tween", 0.2, 1)
                     : fadeIn("right", "tween", 0.2, 1)
                 }

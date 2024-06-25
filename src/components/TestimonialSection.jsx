@@ -86,26 +86,27 @@ const TestimonialSection = () => {
         <h1 className=" text-2xl sm:text-4xl md:text-5xl md:w-1/2  text-[#21282E] font-bold my-12">
           What Students are saying about internee.pk
         </h1>
-
-        <Carousel
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
-          keyBoardControl={true}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-        >
-          {testimonials.map((testimonial, index) => (
-            <Testimonial
-              key={index}
-              comment={testimonial.comment}
-              name={testimonial.name}
-              location={testimonial.location}
-            />
-          ))}
-        </Carousel>
+        <motion.div variants={bottomUp} initial="hidden" whileInView="show">
+          <Carousel
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={2000}
+            keyBoardControl={true}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+          >
+            {testimonials.map((testimonial, index) => (
+              <Testimonial
+                key={index}
+                comment={testimonial.comment}
+                name={testimonial.name}
+                location={testimonial.location}
+              />
+            ))}
+          </Carousel>
+        </motion.div>
       </div>
       <div className="md:ml-24 flex flex-col md:flex-row items-center justify-center my-12">
         <div className="flex flex-1 ">
@@ -144,12 +145,7 @@ const TestimonialSection = () => {
 
 const Testimonial = ({ comment, name, location }) => {
   return (
-    <motion.div
-      variants={bottomUp}
-      initial="hidden"
-      whileInView="show"
-      className="flex flex-col  justify-between bg-[#21282E] text-white min-h-80 h-auto m-1 md:m-4 rounded-3xl p-5 md:p-10"
-    >
+    <div className="flex flex-col  justify-between bg-[#21282E] text-white min-h-80 h-auto m-1 md:m-4 rounded-3xl p-5 md:p-10">
       <p className="text-xl sm:text-xl p-2 ">&quot; {comment} &quot;</p>
       <div>
         <p className="text-lg md:text-xl  text-[#FFCF5C] font-semibold">
@@ -157,7 +153,7 @@ const Testimonial = ({ comment, name, location }) => {
         </p>
         <p className="text-lg md:text-xl">{location}</p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

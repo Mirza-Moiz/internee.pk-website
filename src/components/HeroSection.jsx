@@ -7,9 +7,9 @@ import Incubation from "../assets/images/incubation.jpg";
 import Pitb from "../assets/images/pitb.png";
 import Nic from "../assets/images/nic.png";
 
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { bottomUp, fadeIn, staggerContainer } from "../utils/motion";
 
-const HeroSection = () => {
+const HeroSection = ({ screenWidth }) => {
   return (
     <section className="flex flex-col md:flex-row m-4 sm:mx-32 mt-3 ">
       <div className="flex-1 flex-col">
@@ -82,7 +82,11 @@ const HeroSection = () => {
         viewport={{ once: false, amount: 0.25 }}
         className="flex-1"
       >
-        <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
+        <motion.div
+          variants={
+            screenWidth < 1024 ? bottomUp : fadeIn("left", "tween", 0.2, 1)
+          }
+        >
           <img src={Hero} alt="Internee.pk" />
         </motion.div>
       </motion.div>

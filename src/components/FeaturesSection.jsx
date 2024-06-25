@@ -4,7 +4,7 @@ import { bottomUp, fadeIn, staggerContainer } from "../utils/motion";
 
 import { RxEnvelopeClosed } from "react-icons/rx";
 
-const FeaturesSection = () => {
+const FeaturesSection = ({ screenWidth }) => {
   const features = [
     "5500+ Students already registered",
     "Task based projects that based on hands on experience",
@@ -15,8 +15,8 @@ const FeaturesSection = () => {
     "Direct Collaboration with companies for direct hiring",
   ];
   return (
-    <div className="flex justify-center items-center min-h-screenp-6">
-      <div className=" p-6 flex flex-col justify-between md:flex-row w-full max-w-6xl">
+    <div className="flex justify-center items-center min-h-screen p-6">
+      <div className=" p-6 flex flex-col justify-between md:flex-row w-[85%] max-w-6xl">
         <div className="md:w-1/2 flex flex-col justify-center">
           <h1 className=" text-2xl sm:text-4xl md:text-5xl  text-[#21282E] font-bold my-12">
             Why internee.pk?
@@ -46,9 +46,13 @@ const FeaturesSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="md:w-1/3 mt-6 md:mt-0 flex justify-center items-center"
+          className="w-[90%] md:w-1/3 mt-6 md:mt-0 flex justify-center items-center"
         >
-          <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
+          <motion.div
+            variants={
+              screenWidth < 1024 ? bottomUp : fadeIn("left", "tween", 0.2, 1)
+            }
+          >
             <img
               src="./images/programing.jpg"
               alt="Developer"

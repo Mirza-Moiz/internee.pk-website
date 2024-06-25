@@ -8,3 +8,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #43a724;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #36851e;
+}
