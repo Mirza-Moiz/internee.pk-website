@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn, bottomUp, staggerContainer } from "../utils/motion";
+
 import { PiTelevisionSimple } from "react-icons/pi";
 import { FaUserFriends } from "react-icons/fa";
 import { TbScreenShare } from "react-icons/tb";
@@ -189,13 +192,27 @@ const DynamicSections = () => {
               index === 1 || index === 3 ? "md:flex-row-reverse" : ""
             }`}
           >
-            <div className="flex w-full items-center md:w-1/2">
-              <img
-                src={section.image}
-                alt={section.title}
-                className="w-full h-fit"
-              />
-            </div>
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.25 }}
+              className="flex w-full items-center md:w-1/2"
+            >
+              <motion.div
+                variants={
+                  index === 1 || index === 3
+                    ? fadeIn("left", "tween", 0.2, 1)
+                    : fadeIn("right", "tween", 0.2, 1)
+                }
+              >
+                <img
+                  src={section.image}
+                  alt={section.title}
+                  className="w-full h-fit"
+                />
+              </motion.div>
+            </motion.div>
             <div className="flex flex-col w-full py-2 md:w-1/2 pl-1 md:pl-10">
               <h1 className="text-xl md:text-2xl font-bold">
                 {section.subTitle}
@@ -209,7 +226,14 @@ const DynamicSections = () => {
               <div className="grid grid-cols-1 gap-4 my-4 md:grid-cols-2 md:gap-8 w-[100%]">
                 {section.content.map((content, contentIndex) => (
                   <div key={contentIndex} className="flex">
-                    <div className="icon">{content.icon}</div>
+                    <motion.div
+                      variants={bottomUp}
+                      initial="hidden"
+                      whileInView="show"
+                      className="icon"
+                    >
+                      {content.icon}
+                    </motion.div>
                     <div>
                       <p className="text-[#717275] text-[14px] m-1 w-[100%] md:max-w-[90%]">
                         <b>{content.title}</b>

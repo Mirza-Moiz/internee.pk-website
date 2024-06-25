@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn, bottomUp, staggerContainer } from "../utils/motion";
+
 import Carousel from "react-multi-carousel";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { MdOutlinePayment } from "react-icons/md";
@@ -89,7 +92,7 @@ const TestimonialSection = () => {
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={5000}
+          autoPlaySpeed={2000}
           keyBoardControl={true}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -141,7 +144,12 @@ const TestimonialSection = () => {
 
 const Testimonial = ({ comment, name, location }) => {
   return (
-    <div className="flex flex-col  justify-between bg-[#21282E] text-white min-h-80 h-auto m-1 md:m-4 rounded-3xl p-5 md:p-10">
+    <motion.div
+      variants={bottomUp}
+      initial="hidden"
+      whileInView="show"
+      className="flex flex-col  justify-between bg-[#21282E] text-white min-h-80 h-auto m-1 md:m-4 rounded-3xl p-5 md:p-10"
+    >
       <p className="text-xl sm:text-xl p-2 ">&quot; {comment} &quot;</p>
       <div>
         <p className="text-lg md:text-xl  text-[#FFCF5C] font-semibold">
@@ -149,7 +157,7 @@ const Testimonial = ({ comment, name, location }) => {
         </p>
         <p className="text-lg md:text-xl">{location}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

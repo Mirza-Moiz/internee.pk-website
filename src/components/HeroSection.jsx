@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
+
 import { ReactTyped } from "react-typed";
+
 import Hero from "../assets/images/hero.webp";
 import Incubation from "../assets/images/incubation.jpg";
 import Pitb from "../assets/images/pitb.png";
 import Nic from "../assets/images/nic.png";
+
+import { fadeIn, staggerContainer } from "../utils/motion";
+
 const HeroSection = () => {
   return (
     <section className="flex flex-col md:flex-row m-4 sm:mx-32 mt-3 ">
@@ -69,9 +75,17 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex-1">
-        <img src={Hero} alt="Internee.pk" />
-      </div>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="flex-1"
+      >
+        <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
+          <img src={Hero} alt="Internee.pk" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
