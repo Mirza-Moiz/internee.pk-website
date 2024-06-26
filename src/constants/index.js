@@ -489,6 +489,32 @@ const cardsCompanyPage = [
     },
 ];
 
+const dataContactPage = [
+    {
+        Icon: FiDownloadCloud,
+        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
+        title: "7k+ Internship Provided",
+        content: "Internee.pk has successfully facilitated over 7,000 internship opportunities for students and professionals alike! This milestone reflects our commitment to empowering individuals with valuable hands-on experience and career-building opportunities"
+    },
+    {
+        Icon: LiaUserFriendsSolid,
+        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
+        title: "15k+ LinkedIn Family",
+        content: "Our LinkedIn community has surpassed 15,000 members, comprising professionals like yourself who are driving innovation and growth in their respective industries",
+    },
+    {
+        Icon: PiHeadphonesLight,
+        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
+        title: "19 Courses on LMS",
+        content: "Our LMS provides the perfect platform for growth and development. With interactive lessons, practical exercises, and expert-led instruction, you'll gain the insights and capabilities you need to excel in today's competitive landscape",
+    },
+    {
+        Icon: AiOutlineSafetyCertificate,
+        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
+        title: "15 Companies Onboarded",
+        content: "we are expanding our network and creating new avenues for talent acquisition and career growth. Whether you're a student looking for valuable internships or a business seeking top-tier candidates, our platform provides the perfect space to connect, collaborate, and succeed together",
+    },
+];
 
 // named exxport
-export { internshipCards, cardsHomePage, blogs, cardsInernshipPage, sectionsHomePage, cardsCompanyPage, sectionsInternshipPage };
+export { internshipCards, cardsHomePage, blogs, cardsInernshipPage, sectionsHomePage, cardsCompanyPage, sectionsInternshipPage, dataContactPage };
