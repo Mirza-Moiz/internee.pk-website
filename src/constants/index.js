@@ -113,56 +113,7 @@ const cardsHomePage = [
         image: "./images/figma.png",
     },
 ];
-const cardsInernshipPage = [
-    {
-        title: "Backend Development",
-        image: "./images/BackendDevelopment.webp",
-    },
-    {
-        title: "App Development Internship",
-        image: "./images/mobile-app.webp",
-    },
-    {
-        title: "Graphic Design",
-        image: "./images/graphics.webp",
-    },
-    {
-        title: "Chatbot Development",
-        image: "./images/chatbot.webp",
-    },
-    {
-        title: "Data Analytics",
-        image: "./images/analysis.webp",
-    },
-    {
-        title: "Figma Internship",
-        image: "./images/figma.png",
-    },
-    {
-        title: "Backend Development",
-        image: "./images/BackendDevelopment.webp",
-    },
-    {
-        title: "App Development Internship",
-        image: "./images/mobile-app.webp",
-    },
-    {
-        title: "Graphic Design",
-        image: "./images/graphics.webp",
-    },
-    {
-        title: "Chatbot Development",
-        image: "./images/chatbot.webp",
-    },
-    {
-        title: "Data Analytics",
-        image: "./images/analysis.webp",
-    },
-    {
-        title: "Figma Internship",
-        image: "./images/figma.png",
-    },
-];
+
 
 const blogs = [
     {
@@ -369,7 +320,56 @@ const sectionsHomePage = [
         ],
     },
 ];
-
+const cardsInernshipPage = [
+    {
+        title: "Backend Development",
+        image: "./images/BackendDevelopment.webp",
+    },
+    {
+        title: "App Development Internship",
+        image: "./images/mobile-app.webp",
+    },
+    {
+        title: "Graphic Design",
+        image: "./images/graphics.webp",
+    },
+    {
+        title: "Chatbot Development",
+        image: "./images/chatbot.webp",
+    },
+    {
+        title: "Data Analytics",
+        image: "./images/analysis.webp",
+    },
+    {
+        title: "Data Science",
+        image: "./images/DataScience.webp",
+    },
+    {
+        title: "Digital Marketing",
+        image: "./images/marketing.webp",
+    },
+    {
+        title: "Cloud Computing",
+        image: "./images/cloud.webp",
+    },
+    {
+        title: "FrontEnd Internship",
+        image: "./images/frontend.webp",
+    },
+    {
+        title: "Machine Learning",
+        image: "./images/nextjs.webp",
+    },
+    {
+        title: "Flutter Internship",
+        image: "./images/flutter.webp",
+    },
+    {
+        title: "React Internship",
+        image: "./images/react.webp",
+    },
+];
 const sectionsInternshipPage = [
     {
         subTitle: "Our own task portal",
