@@ -1,3 +1,4 @@
+import BackButton from "../components/BackButton";
 import ContactForm from "../components/ContactForm";
 import { dataContactPage } from "../constants/index";
 
@@ -5,6 +6,7 @@ const ContactPage = () => {
   return (
     <>
       <div className="flex justify-center items-center min-h-screen p-10 my-10">
+        <BackButton />
         <div className=" p-6 flex flex-col justify-between md:flex-row w-[85%] max-w-6xl">
           <div className="md:w-[90%] flex flex-col justify-center">
             <div className="relative">

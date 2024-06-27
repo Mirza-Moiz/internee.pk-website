@@ -1,3 +1,4 @@
+import BackButton from "../components/BackButton";
 import ContactForm from "../components/ContactForm";
 
 import { cardsCompanyPage as card } from "../constants/index";
@@ -6,6 +7,7 @@ const CompanyPage = () => {
   return (
     <>
       <section className="flex flex-col justify-center items-center">
+        <BackButton />
         <h1 className="text-center text-xl w-[90%] sm:text-3xl   text-[#21282E] font-bold  mt-10">
           Are you looking for hands on candidate for your company?
         </h1>

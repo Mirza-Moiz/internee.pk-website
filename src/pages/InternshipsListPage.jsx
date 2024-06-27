@@ -4,6 +4,7 @@ import { internshipsList } from "../constants/index";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosTimer } from "react-icons/io";
 import NotFoundPage from "./NotFoundPage";
+import BackButton from "../components/BackButton";
 
 const InternshipsListPage = () => {
   const { id } = useParams();
@@ -21,6 +22,7 @@ const InternshipsListPage = () => {
 
   return (
     <section className="flex flex-col justify-center items-center my-14">
+      <BackButton />
       <h1 className="text-center text-xl w-[90%] sm:text-3xl   text-[#21282E] font-bold  mt-10">
         Featured Internships
       </h1>

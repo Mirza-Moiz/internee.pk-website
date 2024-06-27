@@ -1,9 +1,11 @@
 import { FaExclamationTriangle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import BackButton from "../components/BackButton";
 
 const NotFoundPage = () => {
   return (
     <section className="text-center flex flex-col justify-center items-center h-96">
+      <BackButton />
       <FaExclamationTriangle className="text-red-600 text-5xl mb-4" />
       <h1 className="text-6xl font-bold mb-4">404 Not Found</h1>
       <p className="text-xl mb-5 text-red-900">This page does not exist</p>
