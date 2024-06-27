@@ -26,7 +26,7 @@ const InternshipCarousel = ({ internshipCards }) => {
     },
   };
   return (
-    <div className=" flex flex-col  justify-center w-full bg-[#43a724] py-8 px-8 rounded-xl">
+    <div className=" flex flex-col  justify-center w-[95%] md-w-[90%] bg-[#43a724] py-8 px-8 mx-auto rounded-xl">
       <Carousel
         responsive={responsive}
         ssr={true} // means to render carousel on server-side.
@@ -37,14 +37,14 @@ const InternshipCarousel = ({ internshipCards }) => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
       >
-        <div className="flex flex-col items-center justify-center ">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 text-[#21282E] font-bold">
+        <div className="flex flex-col items-center justify-center text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 mb-4 font-bold">
             Get Internship In Your Favourite Domain 🙌. Almost 30+{" "}
           </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl p-2 text-[#21282E] font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl p-2 my-4 font-bold">
             Internships Are Open, Go & Grab Your Seats Now and secure your
             future👨🏼‍💻
-          </h1>
+          </h2>
         </div>
         {/* Items to map */}
         {internshipCards.map((card) => (
@@ -57,9 +57,9 @@ const InternshipCarousel = ({ internshipCards }) => {
         ))}
       </Carousel>
 
-      <h1 className="mt-8 text-center text-1xl sm:text-2xl md:text-3xl lg:text-4xl text-white mx-auto ">
+      <h2 className="mt-8 text-center text-1xl sm:text-2xl md:text-3xl lg:text-4xl text-white mx-auto ">
         Learn skills,<b> Market will be yours.</b>
-      </h1>
+      </h2>
     </div>
   );
 };

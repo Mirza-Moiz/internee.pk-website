@@ -56,7 +56,7 @@ const DynamicSections = ({ screenWidth, sections }) => {
                         whileInView="show"
                         className="icon"
                       >
-                        <Icon {...content.iconProps} />
+                        <Icon className="h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]" />
                       </motion.div>
                       <div>
                         <p className="text-[#717275] text-[14px] m-1 w-[100%] md:max-w-[90%]">

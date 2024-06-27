@@ -154,7 +154,6 @@ const sectionsHomePage = [
                 Icon: (
                     PiTelevisionSimple
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
 
             },
             {
@@ -164,7 +163,6 @@ const sectionsHomePage = [
                 Icon: (
                     FaUserFriends
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
             },
             {
                 title: "SDLC Techniques ",
@@ -173,7 +171,6 @@ const sectionsHomePage = [
                 Icon: (
                     TbScreenShare
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
             },
             {
                 title: "Easy to understand ",
@@ -182,7 +179,6 @@ const sectionsHomePage = [
                 Icon: (
                     GrTask
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
             },
         ],
     },
@@ -200,7 +196,7 @@ const sectionsHomePage = [
                 Icon: (
                     IoCloudDoneOutline
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Certification ",
@@ -209,7 +205,7 @@ const sectionsHomePage = [
                 Icon: (
                     MdOutlineSavedSearch
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Courses in Urdu ",
@@ -218,7 +214,7 @@ const sectionsHomePage = [
                 Icon: (
                     IoMdInformationCircleOutline
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Practice Exercises ",
@@ -227,7 +223,7 @@ const sectionsHomePage = [
                 Icon: (
                     MdOutlineFolderCopy
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
         ],
     },
@@ -245,7 +241,7 @@ const sectionsHomePage = [
                 Icon: (
                     RiPhoneFindLine
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Generate Revenue ",
@@ -254,7 +250,7 @@ const sectionsHomePage = [
                 Icon: (
                     RiShapesLine
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Instructor Identity ",
@@ -263,7 +259,7 @@ const sectionsHomePage = [
                 Icon: (
                     IoMdDownload
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Perfact Share Ratio ",
@@ -272,7 +268,7 @@ const sectionsHomePage = [
                 Icon: (
                     VscTasklist
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
         ],
     },
@@ -289,7 +285,7 @@ const sectionsHomePage = [
                 Icon: (
                     TbScreenShare
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Speed up the design process ",
@@ -297,7 +293,7 @@ const sectionsHomePage = [
                 Icon: (
                     RiTaskLine
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Communicate easier ",
@@ -306,7 +302,7 @@ const sectionsHomePage = [
                 Icon: (
                     FaUserFriends
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Add changes faster ",
@@ -315,7 +311,7 @@ const sectionsHomePage = [
                 Icon: (
                     GoTasklist
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
         ],
     },
@@ -385,7 +381,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     PiTelevisionSimple
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
 
             },
             {
@@ -395,7 +391,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     FaUserFriends
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "SDLC Techniques ",
@@ -404,7 +400,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     TbScreenShare
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Easy to understand ",
@@ -413,7 +409,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     GrTask
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
         ],
     },
@@ -430,7 +426,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     TbScreenShare
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Speed up the design process ",
@@ -438,7 +434,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     RiTaskLine
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Communicate easier ",
@@ -447,7 +443,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     FaUserFriends
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
             {
                 title: "Add changes faster ",
@@ -456,7 +452,7 @@ const sectionsInternshipPage = [
                 Icon: (
                     GoTasklist
                 ),
-                iconProps: { className: 'h-12 w-12 m-2 p-4 text-[#43a724] bg-[#fdae1e0d]' },
+
             },
         ],
     },
@@ -465,25 +461,22 @@ const sectionsInternshipPage = [
 const cardsCompanyPage = [
     {
         Icon: FiDownloadCloud,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
         number: "7k+",
         title: "Internship Provided",
     },
     {
         Icon: LiaUserFriendsSolid,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
         number: "15k+",
         title: "LinkedIn Family",
     },
     {
         Icon: PiHeadphonesLight,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
         number: "19",
         title: "Courses on LMS",
     },
     {
         Icon: AiOutlineSafetyCertificate,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
+
         number: "15",
         title: "Companies Onboarded",
     },
@@ -492,25 +485,22 @@ const cardsCompanyPage = [
 const dataContactPage = [
     {
         Icon: FiDownloadCloud,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
         title: "7k+ Internship Provided",
         content: "Internee.pk has successfully facilitated over 7,000 internship opportunities for students and professionals alike! This milestone reflects our commitment to empowering individuals with valuable hands-on experience and career-building opportunities"
     },
     {
         Icon: LiaUserFriendsSolid,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
         title: "15k+ LinkedIn Family",
         content: "Our LinkedIn community has surpassed 15,000 members, comprising professionals like yourself who are driving innovation and growth in their respective industries",
     },
     {
         Icon: PiHeadphonesLight,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
         title: "19 Courses on LMS",
         content: "Our LMS provides the perfect platform for growth and development. With interactive lessons, practical exercises, and expert-led instruction, you'll gain the insights and capabilities you need to excel in today's competitive landscape",
     },
     {
         Icon: AiOutlineSafetyCertificate,
-        iconProps: { className: 'h-24 w-24 p-4 text-[#43a724]' },
+
         title: "15 Companies Onboarded",
         content: "we are expanding our network and creating new avenues for talent acquisition and career growth. Whether you're a student looking for valuable internships or a business seeking top-tier candidates, our platform provides the perfect space to connect, collaborate, and succeed together",
     },

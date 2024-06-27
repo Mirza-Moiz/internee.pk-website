@@ -23,7 +23,7 @@ const CompanyPage = () => {
                 key={index}
                 className="flex flex-col items-center justify-center border-2border-[#43a724] rounded-lg px-4 m-4"
               >
-                <Icon {...item.iconProps} />
+                <Icon className="h-24 w-24 p-4 text-[#43a724]" />
                 <h1 className=" text-xl md:text-3xl  text-[#21282E] font-semibold">
                   {item.number}
                 </h1>

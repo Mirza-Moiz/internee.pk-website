@@ -17,7 +17,7 @@ const ContactPage = () => {
 
                     <div className="m-4 flex flex-col md:flex-row justify-center items-start md:items-center ">
                       <div className="bg-[#7be5a25b] m-4 rounded-full p-2 flex items-center justify-center">
-                        <Icon {...data.iconProps} />
+                        <Icon className="h-24 w-24 p-4 text-[#43a724]" />
                       </div>
                       <div className="flex flex-col m-2">
                         <h1 className="text-lg font-semibold text-[#21282E]">
