@@ -8,7 +8,6 @@ import BackButton from "../components/BackButton";
 
 const InternshipsListPage = () => {
   const { id } = useParams();
-  console.log(id);
 
   const internship = internshipsList.find(
     (internship) => internship?.path === id
@@ -17,8 +16,6 @@ const InternshipsListPage = () => {
   if (!internship) {
     return <NotFoundPage />;
   }
-
-  console.log(internship?.data);
 
   return (
     <section className="flex flex-col justify-center items-center my-14">

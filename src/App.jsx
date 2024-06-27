@@ -13,6 +13,7 @@ import InternshipPage from "./pages/InternshipPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { useEffect, useState } from "react";
 import InternshipsListPage from "./pages/InternshipsListPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
