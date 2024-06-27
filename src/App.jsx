@@ -37,7 +37,7 @@ function App() {
           path="/internship"
           element={<InternshipPage screenWidth={screenWidth} />}
         />
-        <Route path="/Internships/:id" element={<InternshipsListPage />} />
+        <Route path="/internships/:id" element={<InternshipsListPage />} />
         <Route path="/company" element={<CompanyPage />} />
         <Route path="/contact" element={<ContactPage />} />
 

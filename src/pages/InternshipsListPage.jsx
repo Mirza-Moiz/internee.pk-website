@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { internshipsList } from "../constants/index";
 
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosTimer } from "react-icons/io";
+import NotFoundPage from "./NotFoundPage";
 
 const InternshipsListPage = () => {
   const { id } = useParams();
@@ -11,6 +12,10 @@ const InternshipsListPage = () => {
   const internship = internshipsList.find(
     (internship) => internship?.path === id
   );
+
+  if (!internship) {
+    return <NotFoundPage />;
+  }
 
   console.log(internship?.data);
 
@@ -55,13 +60,13 @@ const Card = ({ image, title, location, duration, type, remote }) => {
       >
         <img src={image} alt={title} className="h-[60px] w-[60px] " />
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-center w-full">
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full">
         <div className="flex flex-col  w-[100%] md:w-[70%]">
           <h2 className=" text-xl md:text-xl  text-[#21282E] font-semibold">
             {title}
           </h2>
 
-          <div className="flex flex-col md:flex-row flex-nowrap justify-start items-start  my-1 text-[#717275] text-[14px] sm:text-[15px] m-1 w-full overflow-hidden">
+          <div className="flex flex-col lg:flex-row flex-nowrap justify-start items-start  my-1 text-[#717275] text-[14px] sm:text-[15px] m-1 w-full overflow-hidden">
             <p className="flex justify-start items-center flex-1  text-ellipsis w-[190px]">
               <FaMapMarkerAlt className="text-red-600 w-5 h-5 m-2" />
               {location}
@@ -79,12 +84,14 @@ const Card = ({ image, title, location, duration, type, remote }) => {
           </div>
         </div>
         <div className="flex justify-end items-end ">
-          <button
-            className="
-         w-[140px] h-fit py-2 mx-3 mt-4 text-white hover:bg-[#58a940cd] rounded-[5px] bg-[#43a724] transition-all duration-300 ease-in-out "
-          >
-            Apply Now
-          </button>
+          <Link to={"NotFound"}>
+            <button
+              className="
+            w-[140px] h-fit py-2 mx-3 mt-4 text-white hover:bg-[#58a940cd] rounded-[5px] bg-[#43a724] transition-all duration-300 ease-in-out "
+            >
+              Apply Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
