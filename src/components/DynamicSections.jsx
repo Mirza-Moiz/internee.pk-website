@@ -46,24 +46,27 @@ const DynamicSections = ({ screenWidth, sections }) => {
                 {section.description}
               </p>
               <div className="grid grid-cols-1 gap-4 my-4 md:grid-cols-2 md:gap-8 w-[100%]">
-                {section.content.map((content, contentIndex) => (
-                  <div key={contentIndex} className="flex">
-                    <motion.div
-                      variants={bottomUp}
-                      initial="hidden"
-                      whileInView="show"
-                      className="icon"
-                    >
-                      {content.icon}
-                    </motion.div>
-                    <div>
-                      <p className="text-[#717275] text-[14px] m-1 w-[100%] md:max-w-[90%]">
-                        <b>{content.title}</b>
-                        {content.description}
-                      </p>
+                {section.content.map((content, contentIndex) => {
+                  const Icon = content.Icon;
+                  return (
+                    <div key={contentIndex} className="flex">
+                      <motion.div
+                        variants={bottomUp}
+                        initial="hidden"
+                        whileInView="show"
+                        className="icon"
+                      >
+                        <Icon {...content.iconProps} />
+                      </motion.div>
+                      <div>
+                        <p className="text-[#717275] text-[14px] m-1 w-[100%] md:max-w-[90%]">
+                          <b>{content.title}</b>
+                          {content.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
