@@ -506,5 +506,126 @@ const dataContactPage = [
     },
 ];
 
-// named exxport
-export { internshipCards, cardsHomePage, blogs, cardsInernshipPage, sectionsHomePage, cardsCompanyPage, sectionsInternshipPage, dataContactPage };
+const internshipsList = [
+    {
+        path: 'backenddevelopment',
+        data: [
+            {
+                icon: "./images/mern.png",
+                title: 'MERN Stack Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: "./images/mean.png",
+                title: 'MEAN Stack Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: "./images/php.png",
+                title: 'PHP Development',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: "./images/web3.png",
+                title: 'Web 3.0 Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: "./images/nodejs.png",
+                title: 'NodeJS Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Entry',
+                remote: 'Remote',
+            },
+        ],
+    },
+    {
+        path: 'appdevelopmentinternship',
+        data: [
+            {
+                icon: GrTask,
+                title: 'Flutter Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: GrTask,
+                title: 'React Native Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: GrTask,
+                title: 'Swift Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+            {
+                icon: GrTask,
+                title: 'Andriod Internship',
+                location: 'Karachi, Pakistan',
+                duration: '2 months',
+                type: 'Internship',
+                remote: 'Remote',
+            },
+        ],
+    },
+    {
+        path: 'graphicdesign',
+        data: [
+            {
+
+                title: 'Designer Internship',
+                description: 'Create stunning designs and visuals.',
+                // Add more fields as necessary
+            },
+            // Add more card objects as needed
+        ],
+    },
+    {
+        path: 'chatbotdevelopment',
+        data: [
+            {
+
+                title: 'Designer Internship',
+                description: 'Create stunning designs and visuals.',
+                // Add more fields as necessary
+            },
+            // Add more card objects as needed
+        ],
+    },
+    {
+        path: 'frontendinternship',
+        data: [
+            {
+
+                title: 'Designer Internship',
+                description: 'Create stunning designs and visuals.',
+                // Add more fields as necessary
+            },
+            // Add more card objects as needed
+        ],
+    },
+    // Add more path objects as needed
+];
+
+export { internshipCards, cardsHomePage, blogs, cardsInernshipPage, sectionsHomePage, cardsCompanyPage, sectionsInternshipPage, dataContactPage, internshipsList };

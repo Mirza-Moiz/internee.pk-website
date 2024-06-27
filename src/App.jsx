@@ -12,6 +12,7 @@ import CompanyPage from "./pages/CompanyPage";
 import InternshipPage from "./pages/InternshipPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { useEffect, useState } from "react";
+import InternshipsListPage from "./pages/InternshipsListPage";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -36,6 +37,7 @@ function App() {
           path="/internship"
           element={<InternshipPage screenWidth={screenWidth} />}
         />
+        <Route path="/Internships/:id" element={<InternshipsListPage />} />
         <Route path="/company" element={<CompanyPage />} />
         <Route path="/contact" element={<ContactPage />} />
 
