@@ -61,12 +61,12 @@ const Card = ({ image, title, location, duration, type, remote }) => {
             {title}
           </h2>
 
-          <div className="flex flex-nowrap justify-start items-center my-1 text-[#717275] text-[14px] sm:text-[15px] m-1 w-full overflow-hidden">
-            <p className="flex justify-start items-center flex-1  text-ellipsis w-[130px]">
+          <div className="flex flex-col md:flex-row flex-nowrap justify-start items-start  my-1 text-[#717275] text-[14px] sm:text-[15px] m-1 w-full overflow-hidden">
+            <p className="flex justify-start items-center flex-1  text-ellipsis w-[190px]">
               <FaMapMarkerAlt className="text-red-600 w-5 h-5 m-2" />
               {location}
             </p>
-            <p className="flex justify-start items-center flex-1 whitespace-nowrap">
+            <p className="flex justify-start items-center flex-1 whitespace-nowrap w-[150px]">
               <IoIosTimer className="text-green-600 w-5 h-5 m-2" />
               {duration}
             </p>
