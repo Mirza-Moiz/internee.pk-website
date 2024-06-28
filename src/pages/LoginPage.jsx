@@ -3,7 +3,20 @@ import { bottomUp } from "../utils/motion";
 
 import Logo from "../assets/images/logo.png";
 import BackButton from "../components/BackButton";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setEmail("");
+    setPassword("");
+
+    navigate("/");
+  };
   return (
     <>
       <BackButton />
@@ -24,15 +37,29 @@ const LoginPage = () => {
             <div className="mb-4 w-full">
               <input
                 type="email"
-                id="email"
-                placeholder="Email"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                name="Email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                onInvalid={(e) =>
+                  e.currentTarget.setCustomValidity(
+                    "Please enter a valid email address"
+                  )
+                }
+                onInput={(e) => e.currentTarget.setCustomValidity("")}
+                className="w-full px-3 py-2 border rounded-lg"
+                placeholder="name@email.com"
               />
             </div>
             <div className="mb-4 w-full">
               <input
                 type="password"
                 id="password"
+                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
                 placeholder="Password"
                 className="shadow appearance-none border border-red rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
               />
@@ -55,12 +82,14 @@ const LoginPage = () => {
               <button
                 className="bg-[#04962f] hover:bg-[#32af57]  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all ease-in-out duration-150"
                 type="button"
+                disabled={!email || !password}
+                onClick={submitHandler}
               >
                 Sign In
               </button>
             </div>
             <a
-              className="inline-block align-baseline  text-md text-[#04962f] hover:text-[#32af57] transition-all ease-in-out duration-150"
+              className="inline-block align-baseline pt-4  text-md text-[#04962f] hover:text-[#32af57] transition-all ease-in-out duration-150"
               href="#"
             >
               Forgot Password?
