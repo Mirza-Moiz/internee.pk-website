@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -109,12 +109,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button className="mx-2 lg:m-4 w-24 text-md lg:w-40 py-[14px] bg-white text-[#43a724] hover:text-[#74cb5acd] rounded-[25px] border-solid border-[#43a724] border-2 transition-all duration-300 ease-in-out">
-                    <a
-                      href="https://portal.internee.pk/login.php"
-                      target="_blank"
-                    >
-                      Internee&apos;s Login
-                    </a>
+                    <Link to="/login">Internee&apos;s Login</Link>
                   </button>
                 </li>
               </ul>
@@ -190,9 +185,7 @@ const Navbar = () => {
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               className="block px-3 py-2 rounded-md text-base font-medium hover:text-[#43a724] hover:bg-gray-50"
             >
-              <a href="https://portal.internee.pk/login.php" target="_blank">
-                Internee&apos;s Login
-              </a>
+              <Link to="/login">Internee&apos;s Login</Link>
             </button>
           </div>
         </div>
