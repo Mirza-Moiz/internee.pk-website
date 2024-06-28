@@ -102,9 +102,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <button className="mx-2 lg-mx-4 w-24 text-md lg:w-36 py-[14px] bg-[#43a724] hover:bg-[#74cb5acd] text-white rounded-[25px] transition-all duration-300 ease-in-out">
-                    <a href="https://job.internee.pk/" target="_blank">
-                      Job Portal
-                    </a>
+                    <Link to="/job">Job Portal</Link>
                   </button>
                 </li>
                 <li>
@@ -177,9 +175,7 @@ const Navbar = () => {
               onClick={() => setShowMobileMenu(!showMobileMenu)}
               className="block px-3 py-2 rounded-md text-base font-medium hover:text-[#43a724] hover:bg-gray-50"
             >
-              <a href="https://job.internee.pk/" target="_blank">
-                Job Portal
-              </a>
+              <Link to="/job">Job Portal</Link>
             </button>
             <button
               onClick={() => setShowMobileMenu(!showMobileMenu)}

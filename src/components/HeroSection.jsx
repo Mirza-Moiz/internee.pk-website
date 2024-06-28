@@ -8,6 +8,7 @@ import Pitb from "../assets/images/pitb.png";
 import Nic from "../assets/images/nic.png";
 
 import { bottomUp, fadeIn, staggerContainer } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = ({ screenWidth }) => {
   return (
@@ -55,9 +56,7 @@ const HeroSection = ({ screenWidth }) => {
         <div className="flex  mt-4 text-[14px] sm:text-[18px]">
           <div className="flex flex-col items-center">
             <button className="mx-4 w-32 sm:w-40 py-2 bg-white text-[#43a724] hover:text-[#74cb5acd] rounded-[25px] border-solid border-[#43a724] border-2 transition-all duration-300 ease-in-out">
-              <a href="https://job.internee.pk/" target="_blank">
-                Job Portal
-              </a>
+              <Link to="/job">Job Portal</Link>
             </button>
             <p className="text-[#717275] font-semibold text-[12px] m-1 max-w-[80%] text-center">
               Coming Soon!
@@ -65,9 +64,7 @@ const HeroSection = ({ screenWidth }) => {
           </div>
           <div className="flex flex-col items-center ">
             <button className="mx-4 w-32 sm:w-40  py-2 bg-[#43a724] hover:bg-[#74cb5acd] text-white rounded-[25px] transition-all duration-300 ease-in-out">
-              <a href="https://learn.internee.pk/" target="_blank">
-                Our LMS
-              </a>
+              <Link to="/notfound">Our LMS</Link>
             </button>
             <p className="text-[#717275] font-semibold text-[12px] m-1 max-w-[80%] text-center">
               90% Courses are in Urdu

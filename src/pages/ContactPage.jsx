@@ -7,14 +7,17 @@ const ContactPage = () => {
     <>
       <div className="flex justify-center items-center min-h-screen p-10 my-10">
         <BackButton />
-        <div className=" p-6 flex flex-col justify-between md:flex-row w-[85%] max-w-6xl">
-          <div className="md:w-[90%] flex flex-col justify-center">
+        <div className="p-3 md:p-6 flex flex-col justify-between md:flex-row w-full md:w-[85%]  ">
+          <div className=" md:w-[90%] flex flex-col justify-center">
             <div className="relative">
               <div className="absolute left-3 top-0 bottom-0 border-l-2 border-[#43a724]"></div>
               {dataContactPage.map((data, index) => {
                 const Icon = data.Icon;
                 return (
-                  <div key={index} className="flex items-center mb-10 relative">
+                  <div
+                    key={index}
+                    className="flex items-baseline md:items-center mb-10 relative"
+                  >
                     <div className="text-[#43a724] bg-[#43a724] rounded-full p-3 "></div>
 
                     <div className="m-4 flex flex-col md:flex-row justify-center items-start md:items-center ">

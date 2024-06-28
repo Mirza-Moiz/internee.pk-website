@@ -29,10 +29,10 @@ const InternshipCarousel = ({ internshipCards }) => {
     <div className=" flex flex-col  justify-center w-[95%] md-w-[90%] bg-[#43a724] py-8 px-8 mx-auto rounded-xl">
       <Carousel
         responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
+        ssr={true}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={5000}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}

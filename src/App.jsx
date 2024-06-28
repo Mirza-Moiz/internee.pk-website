@@ -14,6 +14,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import { useEffect, useState } from "react";
 import InternshipsListPage from "./pages/InternshipsListPage";
 import LoginPage from "./pages/LoginPage";
+import JobPortalPage from "./pages/JobPortalPage";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -43,6 +44,7 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Route>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/job" element={<JobPortalPage />} />
       </>
     )
   );

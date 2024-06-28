@@ -1,6 +1,7 @@
 import "react-multi-carousel/lib/styles.css";
 
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const InternshipSection = ({ cards }) => {
   return (
@@ -17,9 +18,7 @@ const InternshipSection = ({ cards }) => {
           range of virtual internship opportunities exclusively in the IT field.
         </p>
         <button className="w-40 p-2  my-3 text-white hover:bg-[#58a940cd] rounded-[10px] bg-[#43a724] transition-all duration-300 ease-in-out ">
-          <a href="https://internee.pk/web-design.html" target="_blank">
-            Browse Internship
-          </a>
+          <Link to="/internship">Browse Internship</Link>
         </button>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 w-full sm:w-[100%] m-auto mt-4">

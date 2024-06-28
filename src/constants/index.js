@@ -32,13 +32,13 @@ const internshipCards = [
         image: "./images/cloud.webp",
     },
     {
-        title: "Graphic Designing Internship",
+        title: "Graphic Design",
         description:
             "What sets our Graphic Designing internship apart? It's the perfect blend of theory and hands-on practice. You'll not only grasp the principles of design but also dive into real-world projects that challenge and enhance your creative skills.",
         image: "./images/graphics.webp",
     },
     {
-        title: "Backend Internship",
+        title: "Backend Development",
         description:
             "Backend internship? It's not just about learning; it's about crafting scalable solutions that power the digital landscape. Throughout he nternship, you'll engage in hands-on rojects, tackling real-world challenges longside seasoned developers who are assionate about mentoring the next generation.",
         image: "./images/BackendDevelopment.webp",
@@ -50,13 +50,13 @@ const internshipCards = [
         image: "./images/portrait-woman.webp",
     },
     {
-        title: "Mobile App Internship ",
+        title: "App Development Internship",
         description:
             "Our internship goes beyond coding; it's about understanding user behavior, mastering UI/UX principles, and creating apps that leave a lasting impression. Whether you're a seasoned coder or a budding developer, our program is tailored to nurture your skills and broaden your understanding of app architecture.",
         image: "./images/mobile-app.webp",
     },
     {
-        title: "Chatbot Development Internship",
+        title: "Chatbot Development",
         description:
             " Our program is designed for enthusiasts eager to explore natural language processing, machine learning, and the art of crafting intelligent conversational agents. From understanding user intents to deploying chatbots in real-world scenarios, you'll gain hands-on experience with cutting-edge technologies.",
         image: "./images/chatbot.webp",
@@ -113,7 +113,6 @@ const cardsHomePage = [
         image: "./images/figma.png",
     },
 ];
-
 
 const blogs = [
     {
