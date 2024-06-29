@@ -22,9 +22,9 @@ const LoginPage = () => {
       <BackButton />
       <div className="flex items-center justify-center h-screen">
         <div
-          className="flex flex-col  items-center justify-center w-full max-w-sm rounded-lg bg-white shadow-lg p-4"
+          className="flex flex-col m-4 items-center justify-center w-full max-w-sm rounded-lg bg-white shadow-lg p-4"
           style={{
-            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
+            boxShadow: "rgb(0 0 0 / 10%) 0px 0px 20px 10px",
           }}
         >
           <img className="h-14 w-auto" src={Logo} alt="Internee.pk" />

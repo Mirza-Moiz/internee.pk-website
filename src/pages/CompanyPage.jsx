@@ -23,7 +23,7 @@ const CompanyPage = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center border-2border-[#43a724] rounded-lg px-4 m-4"
+                className="flex flex-col items-center justify-center border-2 border-[#43a724] rounded-lg px-4 m-4"
               >
                 <Icon className="h-24 w-24 p-4 text-[#43a724]" />
                 <h2 className=" text-xl md:text-3xl  text-[#21282E] font-semibold">
