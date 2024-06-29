@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const location = useLocation();
   return (
-    <nav className="bg-white fixed top-0 w-full z-50 shadow-sm">
+    <nav className="bg-white fixed top-0 w-full z-[10001] shadow-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-28 items-center justify-between">
           <div className="flex md:flex-1 items-center justify-center md:items-stretch md:justify-start">
