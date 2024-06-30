@@ -5,6 +5,8 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import MainLayout from "./layout/MainLayout";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
@@ -50,7 +52,12 @@ function App() {
       </>
     )
   );
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Analytics />
+      <RouterProvider router={router} />;
+    </>
+  );
 }
 
 export default App;
